@@ -20,7 +20,7 @@ export default {
 
     const counter = ref(0)
     const increment = () => counter.value++
-    return {}
+    return { counter, increment }
   },
 }
 </script>
