@@ -1,6 +1,7 @@
 <template>
   <button @click="increment">Counter</button>
   <div>{{ counter }}</div>
+  <div>{{ arrayOfEmojis }}</div>
 </template>
 
 <script>
@@ -34,7 +35,7 @@ export default {
       return Array.from(new Array(counter.value), () => props.emoji).join(" ")
     })
 
-    return { counter, increment }
+    return { counter, increment, arrayOfEmojis }
   },
 }
 </script>
