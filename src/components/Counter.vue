@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import { onMounted } from "@vue/runtime-core"
 export default {
   props: {
     emoji: {
@@ -12,6 +13,9 @@ export default {
   },
   setup(props) {
     console.log(props.emoji)
+    onMounted(() => {
+      console.log("Component mounted!")
+    })
     return {}
   },
 }
