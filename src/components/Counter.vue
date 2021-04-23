@@ -25,7 +25,7 @@ export default {
     watch(
       () => counter,
       (newValue, oldValue) => {
-        if (current === 5) {
+        if (newValue === 5) {
           console.log("You have clicked five times!")
         }
       }
