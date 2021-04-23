@@ -20,6 +20,16 @@ export default {
 
     const counter = ref(0)
     const increment = () => counter.value++
+
+    watch(
+      () => counter,
+      (newValue, oldValue) => {
+        if (current === 5) {
+          console.log("You have clicked five times!")
+        }
+      }
+    )
+
     return { counter, increment }
   },
 }
