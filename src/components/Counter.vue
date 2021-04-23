@@ -1,5 +1,6 @@
 <template>
-  <button>Counter</button>
+  <button @click="increment">Counter</button>
+  <div>{{ counter }}</div>
 </template>
 
 <script>
@@ -17,7 +18,7 @@ export default {
       console.log("Component mounted!")
     })
 
-    const counter = ref(counter)
+    const counter = ref(0)
     const increment = () => counter.value++
     return {}
   },
