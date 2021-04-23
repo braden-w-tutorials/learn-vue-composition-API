@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { onMounted } from "@vue/runtime-core"
+import { ref, onMounted } from "vue"
 export default {
   props: {
     emoji: {
@@ -16,6 +16,9 @@ export default {
     onMounted(() => {
       console.log("Component mounted!")
     })
+
+    const counter = ref(counter)
+    const increment = () => counter.value++
     return {}
   },
 }
