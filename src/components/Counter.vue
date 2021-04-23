@@ -30,6 +30,10 @@ export default {
       }
     )
 
+    const arrayOfEmojis = computed(() => {
+      return Array.from(new Array(counter.value), () => props.emoji).join(" ")
+    })
+
     return { counter, increment }
   },
 }
