@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue"
+import { ref, onMounted, watch, computed } from "vue"
 export default {
   props: {
     emoji: {
